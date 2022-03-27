@@ -27,9 +27,14 @@ namespace dfinery.backend.assignment
         public void ConfigureServices(IServiceCollection services)
         {
             var queueUrl = Configuration["AWS:SQS:Url"];
-            var eventSQSMessenger= new EventSQSMessenger(queueUrl);
+            var eventSQSMessenger = new EventSQSMessenger(queueUrl);
+
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            var eventStoreService = new EventStoreService(connectionString);
 
             services.AddSingleton<IEventSQSMessenger>(eventSQSMessenger);
+            services.AddSingleton<IEventStoreService>(eventStoreService);
+
             services.AddControllersWithViews();
         }
 
