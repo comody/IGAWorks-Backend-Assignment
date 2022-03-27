@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dfinery.backend.assignment.Service.Messenger;
+using dfinery.backend.assignment.Service.messenger;
 using dfinery.backend.assignment.Service.store;
 using dfinery.backend.assignment.store.IEventStoreService;
 using Microsoft.AspNetCore.Builder;

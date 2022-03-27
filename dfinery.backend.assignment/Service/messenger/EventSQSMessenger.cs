@@ -5,7 +5,7 @@ using dfinery.backend.assignment.Models;
 using Newtonsoft.Json;
 
 // 
-namespace dfinery.backend.assignment.Service.Messenger
+namespace dfinery.backend.assignment.Service.messenger
 { 
     public struct EventSQSMessenger : IEventSQSMessenger
     {

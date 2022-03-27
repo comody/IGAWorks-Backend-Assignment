@@ -2,7 +2,7 @@
 using dfinery.backend.assignment.Models;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using dfinery.backend.assignment.Service.Messenger;
+using dfinery.backend.assignment.Service.messenger;
 
 namespace dfinery.backend.assignment.Controllers
 {
