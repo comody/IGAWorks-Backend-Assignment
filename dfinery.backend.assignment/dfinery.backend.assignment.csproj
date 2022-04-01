@@ -13,11 +13,12 @@
     <None Remove="MySql.Data" />
     <None Remove="Models\collect\" />
     <None Remove="Models\search\" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.SQS" Version="3.7.2.37" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="MySql.Data" Version="8.0.28" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Service\" />
