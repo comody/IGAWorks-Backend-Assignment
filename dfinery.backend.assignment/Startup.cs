@@ -34,8 +34,7 @@ namespace dfinery.backend.assignment
 
             services.AddSingleton<IEventSQSMessenger>(eventSQSMessenger);
             services.AddSingleton<IEventStoreService>(eventStoreService);
-
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
