@@ -1,15 +1,15 @@
 # IGAWorks Backend Assignment 
 ## Development Enviroment 
-언어 : .Net Core C#
-개발툴 : Visual Studio MSDN Community
-소스코드 형상관리: Github
-서버 형상관리: Docker
-클라우드 환경 : AWS
-AWS Service : EC2, SQS, Lambda
+언어 : .Net Core C#   
+개발툴 : Visual Studio MSDN Community   
+소스코드 형상관리: Github   
+서버 형상관리: Docker   
+클라우드 환경 : AWS   
+AWS Service : EC2, SQS, Lambda   
 
 ## Project Structure
 ### Event Collect API 
-클라이언트로부터 event를 수신합니다.
+클라이언트로부터 event를 수신합니다.   
 SQS로 event 내용을 전송합니다.
 ### Event Collect Worker(Lambda)
 SQS로 전달받은 event를 RDS DB에 입력합니다.
