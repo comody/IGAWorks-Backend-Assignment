@@ -4,7 +4,6 @@ using Amazon.SQS;
 using dfinery.backend.assignment.Models;
 using Newtonsoft.Json;
 
-// 
 namespace dfinery.backend.assignment.Service.messenger
 { 
     public struct EventSQSMessenger : IEventSQSMessenger
@@ -14,11 +13,11 @@ namespace dfinery.backend.assignment.Service.messenger
 
         public EventSQSMessenger(string queueUrl)
         {
-            amazonSQSClient = new AmazonSQSClient();
+            amazonSQSClient = new AmazonSQSClient(Amazon.RegionEndpoint.APNortheast2);
             this.queueUrl = queueUrl;
         }
 
-        public async Task SendMessage(EventCollectReq req)
+        public async Task SendMessage(EventModel req)
         {
             var messageBody = JsonConvert.SerializeObject(req);
             await amazonSQSClient.SendMessageAsync(queueUrl, messageBody);

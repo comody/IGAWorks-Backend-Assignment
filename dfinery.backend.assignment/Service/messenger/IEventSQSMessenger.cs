@@ -6,6 +6,6 @@ namespace dfinery.backend.assignment.Service.messenger
 {
     public interface IEventSQSMessenger
     {
-        Task SendMessage(EventCollectReq req);
+        Task SendMessage(EventModel req);
     }
 }

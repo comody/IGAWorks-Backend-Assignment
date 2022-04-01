@@ -40,11 +40,12 @@ namespace dfinery.backend.assignment.Service.store
                         var parametersByte = (byte[])(reader["parameters"]);
                         var parametersStr = Encoding.UTF8.GetString(parametersByte);
                         var parameters = JsonConvert.DeserializeObject<Dictionary<string, object>>(parametersStr);
+
                         eventModels.Add(new EventSearchModel
                         {
                             event_id = reader["event_id"].ToString(),
                             @event = reader["event"].ToString(),
-                            event_datetime = Convert.ToDateTime(reader["event_datetime"]),
+                            event_datetime = Convert.ToDateTime(reader["event_datetime"]).ToString("yyyy-MM-dd'T'HH:mm:ss.fff'Z'"),
                             parameters = parameters 
 
                         });
