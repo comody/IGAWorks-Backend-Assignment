@@ -10,9 +10,9 @@ namespace dfinery.backend.assignment.Models
         public string @event { get; set; }
         public Dictionary<string, object> parameters { get; set; }
 
-        public EventCollectModel ToEventModel()
+        public EventModel ToEventModel()
         {
-            return new EventCollectModel
+            return new EventModel
             {
                 event_id = this.event_id,
                 user_id = this.user_id,

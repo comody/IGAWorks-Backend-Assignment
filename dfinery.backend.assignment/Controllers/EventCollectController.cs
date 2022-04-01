@@ -21,11 +21,11 @@ namespace dfinery.backend.assignment.Controllers
         {
             bool is_success = true;
 
-            EventCollectModel eventCollectModel = req.ToEventModel();
+            EventModel eventModel = req.ToEventModel();
 
             try
             {
-                await eventSQSMessenger.SendMessage(eventCollectModel);
+                await eventSQSMessenger.SendMessage(eventModel);
             }
             catch(Exception e)
             {
