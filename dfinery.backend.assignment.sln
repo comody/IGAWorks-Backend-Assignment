@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.810.19
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dfinery.backend.assignment", "dfinery.backend.assignment\dfinery.backend.assignment.csproj", "{CD389151-5952-4F20-A4F6-52552EC5FBB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dfinery.backend.assignment.lambda", "dfinery.backend.assignment.lambda\src\dfinery.backend.assignment.lambda\dfinery.backend.assignment.lambda.csproj", "{0DF7C2F5-516D-42B9-97B5-99E26463A12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dfinery.backend.assignment.bot", "..\..\dotnet_toy_project\dfinery.backend.assignment.bot.csproj", "{89F1438B-18A9-4BBC-BFD6-CA50DF758668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CD389151-5952-4F20-A4F6-52552EC5FBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD389151-5952-4F20-A4F6-52552EC5FBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD389151-5952-4F20-A4F6-52552EC5FBB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF7C2F5-516D-42B9-97B5-99E26463A12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF7C2F5-516D-42B9-97B5-99E26463A12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF7C2F5-516D-42B9-97B5-99E26463A12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF7C2F5-516D-42B9-97B5-99E26463A12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F1438B-18A9-4BBC-BFD6-CA50DF758668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F1438B-18A9-4BBC-BFD6-CA50DF758668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F1438B-18A9-4BBC-BFD6-CA50DF758668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F1438B-18A9-4BBC-BFD6-CA50DF758668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
