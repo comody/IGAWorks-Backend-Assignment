@@ -1,6 +1,6 @@
 # IGAWorks Backend Assignment 
 ## Development Enviroment 
-언어 및 프레임워크 : C# .net core
+언어 및 프레임워크 : C# .net core    
 개발툴 : Visual Studio MSDN Community   
 소스코드 형상관리: Github   
 서버 형상관리: Docker   
