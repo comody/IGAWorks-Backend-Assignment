@@ -1,11 +1,11 @@
 # IGAWorks Backend Assignment 
 ## Development Enviroment 
-언어 : .Net Core C#   
+언어 및 프레임워크 : C# .net core
 개발툴 : Visual Studio MSDN Community   
 소스코드 형상관리: Github   
 서버 형상관리: Docker   
 클라우드 환경 : AWS   
-AWS Service : EC2, SQS, Lambda   
+클라우드 서비스 : EC2, SQS, Lambda, RDS
 
 ## Project Structure
 ### Event Collect API 
@@ -82,7 +82,7 @@ Content-Type: application/json
     ]
 }
 ```
-## How to Build 
+## Build & Deploy
 ```
 $ dotnet publish -c Release -o published   
 $ aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin [574066197459.dkr.ecr.ap-northeast-2.amazonaws.com](http://574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/)   
