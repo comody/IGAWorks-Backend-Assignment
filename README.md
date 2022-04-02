@@ -82,3 +82,15 @@ Content-Type: application/json
     ]
 }
 ```
+## How to Build 
+```
+$ dotnet publish -c Release -o published   
+$ aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin [574066197459.dkr.ecr.ap-northeast-2.amazonaws.com](http://574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/)   
+$ docker build -t dfinery-backend-assignment .    
+$ docker tag dfinery-backend-assignment:latest [574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/dfinery-backend-assignment:latest](http://574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/dfinery-backend-assignment:latest)    
+$ docker push [574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/dfinery-backend-assignment:latest](http://574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/dfinery-backend-assignment:latest)    
+    
+$ aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin [574066197459.dkr.ecr.ap-northeast-2.amazonaws.com](http://574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/)    
+$ docker pull [574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/dfinery-backend-assignment:latest](http://574066197459.dkr.ecr.ap-northeast-2.amazonaws.com/dfinery-backend-assignment:latest)    
+$ docker run -d -p 80:80 3b2e0d1b0d1b    
+```
